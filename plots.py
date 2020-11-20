@@ -55,8 +55,8 @@ def plot(save_subs, env_names, file_name, maxes, mins):
         for key in test_performances.keys():
             test_performances[key] = float(test_performances[key].replace('[', '').replace(']', ''))
 
-        lqr_perf = test_performances['Custom LQR']
-        lqr_adv_perf = test_performances['Custom LQR-adv']
+        lqr_perf = test_performances['LQR']
+        lqr_adv_perf = test_performances['LQR-adv']
         robust_lqr_perf = test_performances['Robust LQR']
         robust_lqr_adv_perf = test_performances['Robust LQR-adv']
         nn_perf = test_performances['MBP']
@@ -258,5 +258,5 @@ if __name__ == '__main__':
     ]
     env_names = ['PLDI', 'H$_\mathbf{\infty}$']
     maxes = [1500, 1500]
-    mins = [10, 10]
+    mins = [1, 10]
     plot(save_subs, env_names, 'appendix_results', maxes, mins)
