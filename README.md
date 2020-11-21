@@ -1,5 +1,29 @@
 # Enforcing robust control guarantees within neural network policies
 
+This repository is by 
+[Priya L. Donti](https://www.priyadonti.com),
+[Melrose Roderick](https://melroderick.github.io/),
+[Mahyar Fazlyab](https://scholar.google.com/citations?user=Y3bmjJwAAAAJ&hl=en),
+and [J. Zico Kolter](http://zicokolter.com),
+and contains the [PyTorch](https://pytorch.org) source code to
+reproduce the experiments in our paper
+"[Enforcing robust control guarantees within neural network policies](https://arxiv.org/abs/2011.08105)."
+
+If you find this repository helpful in your publications,
+please consider citing our paper.
+
+```
+@article{donti2020enforcing,
+  title={Enforcing robust control guarantees within neural network policies},
+  author={Priya L. Donti and Melrose Roderick and Mahyar Fazlyab and J. Zico Kolter},
+  journal={arXiv preprint arXiv:2011.08105},
+  year={2020}
+}
+```
+
+
+## Introduction
+
 When designing controllers for safety-critical systems, practitioners often face a challenging tradeoff between robustness and performance. While robust control methods provide rigorous guarantees on system stability under certain worst-case disturbances, they often result in simple controllers that perform poorly in the average (non-worst) case. In contrast, nonlinear control methods trained using deep learning have achieved state-of-the-art performance on many control tasks, but 
 often lack robustness guarantees. We propose a technique that combines the strengths of these two approaches: a generic nonlinear control policy class, parameterized by neural networks, that nonetheless enforces the same provable robustness criteria as robust control. Specifically, we show that by integrating custom convex-optimization-based projection layers into a nonlinear policy, we can construct a provably robust neural network policy class that outperforms robust control methods in the average (non-adversarial) setting. We demonstrate the power of this approach on several domains, improving in performance over existing robust control methods and in stability over (non-robust) RL methods.
 
