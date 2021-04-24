@@ -13,11 +13,11 @@ If you find this repository helpful in your publications,
 please consider citing our paper.
 
 ```
-@article{donti2020enforcing,
+@inproceedings{donti2021enforcing,
   title={Enforcing robust control guarantees within neural network policies},
-  author={Priya L. Donti and Melrose Roderick and Mahyar Fazlyab and J. Zico Kolter},
-  journal={arXiv preprint arXiv:2011.08105},
-  year={2020}
+  author={Donti, Priya and Roderick, Melrose and Fazlyab, Mahyar and Kolter, J Zico},
+  booktitle={International Conference on Learning Representations},
+  year={2021}
 }
 ```
 
